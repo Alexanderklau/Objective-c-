@@ -55,9 +55,11 @@ int main(int argc, const char * argv[]) {
         Fraction *bFraction = [[Fraction alloc]init];
         [aFraction setNumber:1];
         [bFraction setDenominator:4];
+        
         [aFraction print];
         NSLog(@" =");
         NSLog(@"%g",[aFraction coverTonNum]);
+        
         [bFraction print];
         NSLog(@" =");
         NSLog(@"%g",[bFraction coverTonNum]);
