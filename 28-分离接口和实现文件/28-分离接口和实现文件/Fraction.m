@@ -9,29 +9,10 @@
 #import "Fraction.h"
 
 @implementation Fraction
-{
-    int numberator;
-    int denominator;
-}
+@synthesize numberator,denominator;
 -(void) print
 {
     NSLog(@"%i/%i",numberator,denominator);
-}
--(void) setNumberator:(int)n
-{
-    numberator = n;
-}
--(void) setDenominator:(int)d
-{
-    denominator = d;
-}
--(int) numberator
-{
-    return numberator;
-}
--(int) denominator
-{
-    return denominator;
 }
 -(double) covertToNum
 {
@@ -40,6 +21,11 @@
     }
     else
         return NAN;
+}
+-(void) setTo:(int)n over:(int)d
+{
+    numberator = n;
+    denominator = d;
 }
 
 @end
